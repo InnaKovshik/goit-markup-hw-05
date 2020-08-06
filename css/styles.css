@@ -159,6 +159,9 @@ header {
 
 .client-list:hover {
   border-color: var(--background-color-focus);
+  animation-name: '';
+  transition-duration: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-link,
@@ -178,6 +181,9 @@ header {
 
 .address-list-link:hover {
   color: var(--background-color-focus);
+  animation-name: '';
+  transition-duration: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-link::after {
@@ -602,6 +608,9 @@ li.portfolio-catalog:nth-last-child(3n) {
 
 .btn-menu:focus,
 .btn-menu:hover {
+  animation-name: '';
+  transition-duration: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--background-color-focus);
   color: var(--text-color-white);
   cursor: pointer;
@@ -652,7 +661,7 @@ li.portfolio-catalog:nth-last-child(3n) {
   transition-duration: 250ms;
 }
 
-.portfolio-link::before {
+.portfolio-link::before .portfolio-link::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -681,7 +690,8 @@ li.portfolio-catalog:nth-last-child(3n) {
   overflow: hidden;
 }
 
-.portfolio-catalog:hover .portfolio-list-text {
+.portfolio-catalog:hover .portfolio-list-text,
+.portfolio-catalog:focus .portfolio-list-text {
   position: absolute;
   top: 0px;
 }
@@ -691,7 +701,8 @@ li.portfolio-catalog:nth-last-child(3n) {
   fill: #afb1b8;
 }
 
-.network-list:hover svg {
+.network-list:hover svg,
+.network-list:focus svg {
   fill: white;
 }
 
@@ -711,5 +722,8 @@ li.portfolio-catalog:nth-last-child(3n) {
 
 .network-list:focus,
 .network-list:hover {
+  animation-name: '';
+  transition-duration: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--background-color-focus);
 }
